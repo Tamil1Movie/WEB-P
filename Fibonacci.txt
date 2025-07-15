@@ -1,0 +1,20 @@
+//5.Write a java program to generate the first n terms of the Fibonacci sequence.
+
+import java.util.*;
+public class Fibonacci{
+	public static void main(String [] args){
+		Scanner no=new Scanner (System.in);
+		System.out.println("Enter number of terms to printed in Fibonacci sequence:");
+		int num=no.nextInt();
+		int first=0,second=1;
+		System.out.println("The First "+n"terms of the Fibonacci sequence are ");
+		for(int i=1;i<=num;i++)
+		{
+			System.out.print(first + " " );
+			int next=first+second;
+			first=second;
+			second=next;
+		}
+		no.close();
+	}
+}
